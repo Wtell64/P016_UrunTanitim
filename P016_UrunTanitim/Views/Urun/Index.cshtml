@@ -1,0 +1,23 @@
+﻿@model IEnumerable<P016_UrunTanitim.Models.Urun> //kucuk m ile geliyor
+
+<br />
+<table class="table">
+	<tr>
+		<th>Sira No</th>
+		<td>Urun Kodu</td>
+		<td>Urun Tanim</td>
+		<td>Miktar</td>
+		<td>Urun Tur</td>
+	</tr>
+
+	@foreach (var item in Model) //kullanirken buyuk harfle 
+	{
+		<tr>
+			<td>@item.Id</td>
+			<td>@item.UrunKodu</td>
+			<td>@item.UrunTanim</td>
+			<td>@item.Miktar</td>
+			<td>@item.UrunTur</td>
+		</tr>
+	}
+</table>
